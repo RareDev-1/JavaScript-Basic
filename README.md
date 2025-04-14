@@ -49,6 +49,7 @@ function reverseString(str) {
   return str.split('').reverse().join('');
 }
 console.log(reverseString("bird"))
+
 // 8. Create a function that counts the number of vowels in a string.
 function countVowels(str) {
   let count = 0;
@@ -60,7 +61,8 @@ function countVowels(str) {
   }
   return count;
 }
-console.log(countVowels("beautiful"))
+console.log(countVowels("beautiful"));
+
 // 9. Write a program that finds the largest number in an array of 5 numbers.
 function largest(arr) { 
     return Math.max(...arr); 
@@ -94,7 +96,8 @@ function convertSeconds(totalSeconds) {
   const seconds = remainingSeconds % 60;
   return `${hours} hours, ${minutes} minutes, ${seconds} seconds`;
 }
-console.log(convertSeconds(4000))
+console.log(convertSeconds(4000));
+
 // 14. Create a program that checks if a number is prime.
 function isPrime(number) {
   if (number <= 1) return false;
@@ -104,28 +107,33 @@ function isPrime(number) {
   }
   return true;
 }
-console.log(isPrime(17))
+console.log(isPrime(17));
+
 // 15. Write a function that capitalizes the first letter of each word in a sentence.
 function capitalizeWords(sentence) {
   return sentence.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
 console.log(capitalizeWords("i love chocolate"));
+
 // 16. Create a program that calculates the sum of all numbers from 1 to n.
 function sumToN(n) {
   return (n * (n + 1)) / 2;
 }
 console.log(sumToN(15));
+
 // 17. Write code that finds the average of numbers in an array.
 function averageOfArray(arr) {
   const sum = arr.reduce((a, b) => a + b, 0);
   return sum / arr.length;
 }
 console.log(averageOfArray([2, 5, 1, 6, 7]));
+
 // 18. Create a function that removes duplicate values from an array.
 function removeDuplicates(arr) {
   return [...new Set(arr)];
 }
 console.log(removeDuplicates([4, 3, 8, 4, 6, 17, 3, 2, 2, 11, 5, 7, 6, 8]));
+
 // 19. Write a program that counts down from 10 to 1, then displays "Blast off!".
 function countDown(){
     for (let i = 10; i >= 1; i--) {
@@ -187,6 +195,7 @@ console.log(calculator(10, 5, '-'));
 console.log(calculator(10, 5, '*')); 
 console.log(calculator(10, 5, '/')); 
 console.log(calculator(10, 0, '/')); 
+
 // 25. Write a program that finds all factors of a given number.
 function findFactors(num) {
   const factors = [];
@@ -198,12 +207,14 @@ function findFactors(num) {
   return factors;
 }
 console.log(findFactors(12)); 
+
 // 26. Create a function that checks if two strings are anagrams.
 function areAnagrams(str1, str2) {
   const cleanStr = s => s.toLowerCase().replace(/[^a-z]/g, '').split('').sort().join('');
   return cleanStr(str1) === cleanStr(str2);
 }
-console.log(areAnagrams("listen", "silent")); 
+console.log(areAnagrams("listen", "silent"));
+ 
 // 27. Write a program that generates the Fibonacci sequence up to n terms.
 function fibonacci(n) {
   const sequence = [];
@@ -217,6 +228,7 @@ function fibonacci(n) {
   return sequence;
 }
 console.log(fibonacci(10)); 
+
 // 28. Create code that sorts an array of numbers without using the built-in sort method.
 function bubbleSort(arr) {
   const sorted = [...arr];
@@ -230,11 +242,13 @@ function bubbleSort(arr) {
   return sorted;
 }
 console.log(bubbleSort([5, 3, 8, 1, 2])); 
+
 // 29. Write a function that counts how many times a specific element appears in an array.
 function countOccurrences(arr, element) {
   return arr.filter(item => item === element).length;
 }
 console.log(countOccurrences([1, 2, 3, 2, 2, 4], 2)); 
+
 // 30. Create a shopping cart program where users can add items, remove items, and calculate the total price.
 class ShoppingCart {
   constructor() {
